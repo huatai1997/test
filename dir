@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "----------$(date +%Y年%m月%d日' '%T)测试(test.sh)----------"
+BAK=/home/huatai/test1/diri
+##判断目录是否为空，为空则删除
+
+if [ "`ls -A ${BAK}`" = "" ];
+then 
+        echo "${BAK} is empty"
+else
+        echo "${BAK} is not empty"
+fi
+echo "----------$(date +%Y年%m月%d日' '%T)测试(test.sh)----------"
